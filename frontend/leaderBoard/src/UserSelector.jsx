@@ -7,7 +7,10 @@ export default function UserSelector({users, onSelect, onRefresh, fetchLeaderboa
 
     let addUser = async () => {
         if(newUser.trim()) {
-            await axios.post("http://localhost:8080/leaderboard/users", {name : newUser});
+            await axios.post(
+              "https://backend-for-react-2ccm.onrender.com/leaderboard/users",
+              { name: newUser }
+            );
             setNewUser("");
             onRefresh();
             fetchLeaderboard();
