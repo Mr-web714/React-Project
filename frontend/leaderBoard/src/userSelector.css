@@ -1,0 +1,33 @@
+.userSelector {
+    display: flex;
+    width: 100vw;
+    height: 12vh;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.selectUser {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.selectUser:hover{
+    border: 2px solid blue;
+}
+
+.addUser {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addUser input {
+    border-radius: 10px;
+    padding: 1px 10px;
+    margin-right: 10px;
+    color: black;
+    font-size: 1rem;
+}
